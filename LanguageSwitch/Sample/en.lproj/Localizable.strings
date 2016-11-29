@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  Sample
+
+  Created by Roy Marmelstein on 05/08/2015.
+  Copyright (c) 2015 Roy Marmelstein. All rights reserved.
+*/
+
+/*
+ * SHARED STRINGS
+ */
+
+/*
+ * ./examples/LanguageSwitch/Sample/TableViewController.swift
+ */
+
+"Hello" = "xin chao";
+
+"Hi" = "chao";
+
+"Color" = "mau";
+
+/*
+ * ./examples/LanguageSwitch/Sample/MenuViewController.swift
+ */
+
+"Change Language" = "thay doi ngon ngu";
+
+"Hello world" = "xin chao the gioi";
+
+"Change" = "thay doi";
+
+"Reset" = "set mac dinh";

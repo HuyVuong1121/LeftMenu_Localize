@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  Sample
+
+  Created by Roy Marmelstein on 05/08/2015.
+  Copyright (c) 2015 Roy Marmelstein. All rights reserved.
+*/
+
+/*
+ * SHARED STRINGS
+ */
+
+/*
+ * ./examples/LanguageSwitch/Sample/TableViewController.swift
+ */
+
+"Hello" = "Hello";
+
+"Hi" = "Hi";
+
+"Color" = "Color";
+
+/*
+ * ./examples/LanguageSwitch/Sample/MenuViewController.swift
+ */
+
+"Change Language" = "Change Language";
+
+"Hello world" = "Hello world";
+
+"Change" = "Change";
+
+"Reset" = "Reset";
