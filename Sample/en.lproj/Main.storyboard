@@ -32,7 +32,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7M-Do-Neb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-373" y="1156"/>
+            <point key="canvasLocation" x="-197" y="1156"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="NFd-5c-EWH">
@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BM9-B2-W0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="1560"/>
+            <point key="canvasLocation" x="862" y="1592"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="PKb-ml-lmH">
@@ -150,7 +150,107 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWT-lv-RiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="2395"/>
+            <point key="canvasLocation" x="2601" y="859"/>
+        </scene>
+        <!--User-->
+        <scene sceneID="cEc-lA-IR6">
+            <objects>
+                <viewController id="nUp-ZW-p8Z" customClass="UserViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bqj-Je-FVd"/>
+                        <viewControllerLayoutGuide type="bottom" id="W61-6s-agB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ovl-9h-AUd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50444189169999998" green="1" blue="0.78399714929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="User" image="icon_user" id="jhI-0i-9cx" customClass="RAMAnimatedTabBarItem" customModule="Sample" customModuleProvider="target">
+                        <connections>
+                            <outlet property="animation" destination="f4s-i4-Z6V" id="jpQ-fP-ltM"/>
+                        </connections>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xX2-eh-Ykj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="f4s-i4-Z6V" customClass="RAMFlipLeftTransitionItemAnimations" customModule="Sample" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="2252"/>
+        </scene>
+        <!--Drop-->
+        <scene sceneID="GQb-zp-9S5">
+            <objects>
+                <viewController id="X0r-kx-OSc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZRw-IV-y9k"/>
+                        <viewControllerLayoutGuide type="bottom" id="iYs-3i-8rm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ysT-sY-sX6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.79582884381487939" blue="0.93391320316989535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Drop" image="drop" id="6bg-fZ-2aO" customClass="RAMAnimatedTabBarItem" customModule="Sample" customModuleProvider="target">
+                        <connections>
+                            <outlet property="animation" destination="AtW-iW-huC" id="bbh-QS-jkv"/>
+                        </connections>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKC-fc-DxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="AtW-iW-huC" customClass="RAMFlipRightTransitionItemAnimations" customModule="Sample" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="3017"/>
+        </scene>
+        <!--Pin-->
+        <scene sceneID="QHH-cN-Rko">
+            <objects>
+                <viewController id="UNl-vg-OJB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rmY-Yp-zie"/>
+                        <viewControllerLayoutGuide type="bottom" id="bog-J4-4rN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wOE-cA-uYy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.64098297175630359" green="0.13934025995950539" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pin" image="icon_pin" id="il7-BH-1aJ" customClass="RAMAnimatedTabBarItem" customModule="Sample" customModuleProvider="target">
+                        <connections>
+                            <outlet property="animation" destination="Dtv-7J-wkw" id="eUT-r0-RJO"/>
+                        </connections>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMZ-J7-mPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Dtv-7J-wkw" customClass="RAMFlipBottomTransitionItemAnimations" customModule="Sample" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="17" y="2980"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="UhV-DB-Z8P">
+            <objects>
+                <viewController id="3k6-MC-eGk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="03i-jF-lcI"/>
+                        <viewControllerLayoutGuide type="bottom" id="xea-Y2-0jo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="69U-Wv-LrC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.88857720186649114" green="1" blue="0.017691529256921079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" image="Settings" id="GL6-ev-bgl" customClass="RAMAnimatedTabBarItem" customModule="Sample" customModuleProvider="target">
+                        <connections>
+                            <outlet property="animation" destination="OqT-eG-D0H" id="8nc-K9-qji"/>
+                        </connections>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pob-hE-9GW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="OqT-eG-D0H" customClass="RAMFlipTopTransitionItemAnimations" customModule="Sample" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="481" y="2996"/>
         </scene>
         <!--Menu-->
         <scene sceneID="TqY-DU-rLq">
@@ -234,11 +334,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qT8-BB-hIV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="822"/>
+            <point key="canvasLocation" x="889" y="830"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4WK-0E-cYp">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5c-kP-qdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lzq-bw-jg1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -251,7 +352,6 @@
                         <segue destination="uUh-2r-Va1" kind="relationship" relationship="rootViewController" id="vUB-oG-Q0O"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X5c-kP-qdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="349" y="1568"/>
         </scene>
@@ -291,10 +391,35 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H18-pq-Q1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="2387"/>
+            <point key="canvasLocation" x="1906" y="851"/>
+        </scene>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="gOv-HD-X7s">
+            <objects>
+                <tabBarController storyboardIdentifier="RAMAnimatedTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vhx-3W-qag" customClass="RAMAnimatedTabBarController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="B4f-yB-sdP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nUp-ZW-p8Z" kind="relationship" relationship="viewControllers" id="5u3-45-bv4"/>
+                        <segue destination="X0r-kx-OSc" kind="relationship" relationship="viewControllers" id="Bqe-EO-xkz"/>
+                        <segue destination="3k6-MC-eGk" kind="relationship" relationship="viewControllers" id="De2-sd-kjJ"/>
+                        <segue destination="UNl-vg-OJB" kind="relationship" relationship="viewControllers" id="Cx2-4s-IcW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7d-E3-a4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="2228"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Settings" width="30" height="30"/>
         <image name="avata" width="80" height="80"/>
+        <image name="drop" width="24" height="24"/>
+        <image name="icon_pin" width="30" height="30"/>
+        <image name="icon_user" width="30" height="30"/>
     </resources>
 </document>

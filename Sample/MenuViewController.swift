@@ -25,8 +25,8 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.app = UIApplication.sharedApplication().delegate as? AppDelegate
-        test()
-     //   setText()
+     //   test()
+        setText()
         // Do any additional setup after loading the view.
     }
     

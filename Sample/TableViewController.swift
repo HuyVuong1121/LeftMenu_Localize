@@ -88,22 +88,27 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         
-        var viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainController")
-        
+        var viewController = UIViewController()
         
         switch indexPath.row {
         case 0:
-            let detailViewControllor = storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as? DetailViewController
-            
-            viewController = detailViewControllor!
+             let detailViewControllor = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("DetailViewController")
+                   viewController = detailViewControllor
         case 1:
-            viewController.view.backgroundColor = UIColor.blueColor()
+            let tabBarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RAMAnimatedTabBarController")
+            viewController = tabBarController
+        case 2:
+            let viewControllers = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainController")
+            viewController.view.backgroundColor = UIColor.whiteColor()
+            viewController = viewControllers
             
         default:
-            viewController.view.backgroundColor = UIColor.whiteColor()
+            let viewControllers = UIViewController()
+            viewController = viewControllers
             
         }
         let navController = UINavigationController(rootViewController: viewController)
+    
         let elDrawer = (self.navigationController!.parentViewController! as! KYDrawerController)
         elDrawer.mainViewController = navController
         elDrawer.setDrawerState(KYDrawerController.DrawerState.Closed, animated: true)
@@ -117,5 +122,6 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         NSNotificationCenter.defaultCenter().removeObserver(self)
+        
     }
 }

@@ -270,7 +270,7 @@ public class KYDrawerController: UIViewController, UIGestureRecognizerDelegate {
         _containerView.hidden = false
         let duration: NSTimeInterval = animated ? _kDrawerAnimationDuration : 0
         
-        NSNotificationCenter.defaultCenter().postNotificationName("load", object: nil)
+        
         
         UIView.animateWithDuration(duration,
             delay: 0,
@@ -281,12 +281,15 @@ public class KYDrawerController: UIViewController, UIGestureRecognizerDelegate {
                     self._drawerConstraint.constant     = 0
                     self._containerView.backgroundColor = UIColor(white: 0, alpha: 0)
                 case .Opened:
+                   
                     let constant: CGFloat
                     switch self.drawerDirection {
                     case .Left:
                         constant = self.drawerWidth
+                         NSNotificationCenter.defaultCenter().postNotificationName("load", object: nil)
                     case .Right:
                         constant = -self.drawerWidth
+                        
                     }
                     self._drawerConstraint.constant     = constant
                     self._containerView.backgroundColor = UIColor(

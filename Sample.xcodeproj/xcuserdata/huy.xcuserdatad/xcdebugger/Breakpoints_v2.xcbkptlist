@@ -10,12 +10,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/KYDrawerController.swift"
-            timestampString = "502111479.869273"
+            timestampString = "502164257.648466"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "311"
-            endingLineNumber = "311"
-            landmarkName = "handlePanGesture(_:)"
+            startingLineNumber = "289"
+            endingLineNumber = "289"
+            landmarkName = "setDrawerState(_:animated:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sample/NavigationCustom.swift"
+            timestampString = "502172884.216892"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "navigationCustom()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
