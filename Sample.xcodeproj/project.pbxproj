@@ -53,6 +53,20 @@
 		E574BE781DEE6D780016DB1F /* RAMBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574BE701DEE6D780016DB1F /* RAMBadge.swift */; };
 		E574BE791DEE6D780016DB1F /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574BE711DEE6D780016DB1F /* RAMItemAnimationProtocol.swift */; };
 		E574BE7B1DEE7A0F0016DB1F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574BE7A1DEE7A0F0016DB1F /* UserViewController.swift */; };
+		E5EABC941DEEB42000BA254B /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC861DEEB42000BA254B /* Constraint.swift */; };
+		E5EABC951DEEB42000BA254B /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC871DEEB42000BA254B /* ConstraintAttributes.swift */; };
+		E5EABC961DEEB42000BA254B /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC881DEEB42000BA254B /* ConstraintDescription.swift */; };
+		E5EABC971DEEB42000BA254B /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC891DEEB42000BA254B /* ConstraintItem.swift */; };
+		E5EABC981DEEB42000BA254B /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC8A1DEEB42000BA254B /* ConstraintMaker.swift */; };
+		E5EABC991DEEB42000BA254B /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC8B1DEEB42000BA254B /* ConstraintRelation.swift */; };
+		E5EABC9A1DEEB42000BA254B /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC8C1DEEB42000BA254B /* Debugging.swift */; };
+		E5EABC9B1DEEB42000BA254B /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC8D1DEEB42000BA254B /* EdgeInsets.swift */; };
+		E5EABC9C1DEEB42000BA254B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5EABC8E1DEEB42000BA254B /* Info.plist */; };
+		E5EABC9D1DEEB42000BA254B /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC8F1DEEB42000BA254B /* LayoutConstraint.swift */; };
+		E5EABC9E1DEEB42000BA254B /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC911DEEB42000BA254B /* SnapKit.swift */; };
+		E5EABC9F1DEEB42000BA254B /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC921DEEB42000BA254B /* View+SnapKit.swift */; };
+		E5EABCA01DEEB42000BA254B /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC931DEEB42000BA254B /* ViewController+SnapKit.swift */; };
+		E5EABCA41DEEB55A00BA254B /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABCA31DEEB55A00BA254B /* SnapKitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +138,21 @@
 		E574BE701DEE6D780016DB1F /* RAMBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMBadge.swift; sourceTree = "<group>"; };
 		E574BE711DEE6D780016DB1F /* RAMItemAnimationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMItemAnimationProtocol.swift; sourceTree = "<group>"; };
 		E574BE7A1DEE7A0F0016DB1F /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		E5EABC861DEEB42000BA254B /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		E5EABC871DEEB42000BA254B /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		E5EABC881DEEB42000BA254B /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		E5EABC891DEEB42000BA254B /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		E5EABC8A1DEEB42000BA254B /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		E5EABC8B1DEEB42000BA254B /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		E5EABC8C1DEEB42000BA254B /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		E5EABC8D1DEEB42000BA254B /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
+		E5EABC8E1DEEB42000BA254B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5EABC8F1DEEB42000BA254B /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		E5EABC901DEEB42000BA254B /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		E5EABC911DEEB42000BA254B /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		E5EABC921DEEB42000BA254B /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
+		E5EABC931DEEB42000BA254B /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		E5EABCA31DEEB55A00BA254B /* SnapKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +176,7 @@
 		327E65A71DED384E006AF2F4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E5EABC851DEEB40A00BA254B /* snapkit */,
 				E574BE621DEE6D780016DB1F /* RAMAnimatedTabBarController */,
 				E574BE5E1DEE6B950016DB1F /* Localize */,
 				E574BE571DEE6B6E0016DB1F /* KYDrawerController */,
@@ -186,12 +216,12 @@
 		34346CFF1B7294470063FED4 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				E574BE7C1DEE8ADE0016DB1F /* Model */,
 				34346D021B7294470063FED4 /* AppDelegate.swift */,
 				E55BDC751DED598500BF38DE /* MenuViewController.swift */,
 				E55BDCA71DED7B0E00BF38DE /* DetailViewController.swift */,
 				E55BDC771DED5C1400BF38DE /* TableViewController.swift */,
 				E574BE7A1DEE7A0F0016DB1F /* UserViewController.swift */,
+				E5EABCA31DEEB55A00BA254B /* SnapKitViewController.swift */,
 				34346D061B7294470063FED4 /* Main.storyboard */,
 				34346D091B7294470063FED4 /* Images.xcassets */,
 				34346D0B1B7294470063FED4 /* LaunchScreen.xib */,
@@ -362,11 +392,25 @@
 			path = RAMBadge;
 			sourceTree = "<group>";
 		};
-		E574BE7C1DEE8ADE0016DB1F /* Model */ = {
+		E5EABC851DEEB40A00BA254B /* snapkit */ = {
 			isa = PBXGroup;
 			children = (
+				E5EABC861DEEB42000BA254B /* Constraint.swift */,
+				E5EABC871DEEB42000BA254B /* ConstraintAttributes.swift */,
+				E5EABC881DEEB42000BA254B /* ConstraintDescription.swift */,
+				E5EABC891DEEB42000BA254B /* ConstraintItem.swift */,
+				E5EABC8A1DEEB42000BA254B /* ConstraintMaker.swift */,
+				E5EABC8B1DEEB42000BA254B /* ConstraintRelation.swift */,
+				E5EABC8C1DEEB42000BA254B /* Debugging.swift */,
+				E5EABC8D1DEEB42000BA254B /* EdgeInsets.swift */,
+				E5EABC8E1DEEB42000BA254B /* Info.plist */,
+				E5EABC8F1DEEB42000BA254B /* LayoutConstraint.swift */,
+				E5EABC901DEEB42000BA254B /* SnapKit.h */,
+				E5EABC911DEEB42000BA254B /* SnapKit.swift */,
+				E5EABC921DEEB42000BA254B /* View+SnapKit.swift */,
+				E5EABC931DEEB42000BA254B /* ViewController+SnapKit.swift */,
 			);
-			name = Model;
+			path = snapkit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,6 +511,7 @@
 			files = (
 				34346D081B7294470063FED4 /* Main.storyboard in Resources */,
 				34346D2C1B72983C0063FED4 /* Localizable.strings in Resources */,
+				E5EABC9C1DEEB42000BA254B /* Info.plist in Resources */,
 				E55BDC921DED76A100BF38DE /* CameraView.strings in Resources */,
 				E55BDC931DED76A100BF38DE /* CameraViewAssets.xcassets in Resources */,
 				34346D0D1B7294470063FED4 /* LaunchScreen.xib in Resources */,
@@ -496,12 +541,20 @@
 				E55BDC9A1DED76A100BF38DE /* UIButtonExtensions.swift in Sources */,
 				E55BDC951DED76A100BF38DE /* CameraShot.swift in Sources */,
 				E574BE5D1DEE6B6E0016DB1F /* KYEmbedMainControllerSegue.swift in Sources */,
+				E5EABC9D1DEEB42000BA254B /* LayoutConstraint.swift in Sources */,
 				E55BDC741DED58CF00BF38DE /* TableViewCell.swift in Sources */,
 				E574BE5B1DEE6B6E0016DB1F /* KYDrawerController.swift in Sources */,
+				E5EABC981DEEB42000BA254B /* ConstraintMaker.swift in Sources */,
+				E5EABCA41DEEB55A00BA254B /* SnapKitViewController.swift in Sources */,
+				E5EABC9A1DEEB42000BA254B /* Debugging.swift in Sources */,
 				E55BDC9F1DED76A200BF38DE /* CameraViewControllerConstraint.swift in Sources */,
 				E55BDC971DED76A100BF38DE /* PhotoLibraryAuthorizer.swift in Sources */,
+				E5EABC991DEEB42000BA254B /* ConstraintRelation.swift in Sources */,
 				E55BDC9D1DED76A200BF38DE /* VolumeControl.swift in Sources */,
 				E574BE751DEE6D780016DB1F /* RAMRotationAnimation.swift in Sources */,
+				E5EABC9F1DEEB42000BA254B /* View+SnapKit.swift in Sources */,
+				E5EABC9B1DEEB42000BA254B /* EdgeInsets.swift in Sources */,
+				E5EABC9E1DEEB42000BA254B /* SnapKit.swift in Sources */,
 				E55BDC981DED76A100BF38DE /* SingleImageFetcher.swift in Sources */,
 				E574BE741DEE6D780016DB1F /* RAMFumeAnimation.swift in Sources */,
 				E55BDCA81DED7B0E00BF38DE /* DetailViewController.swift in Sources */,
@@ -510,6 +563,7 @@
 				E55BDC781DED5C1400BF38DE /* TableViewController.swift in Sources */,
 				E55BDC941DED76A100BF38DE /* CameraGlobals.swift in Sources */,
 				E55BDCA01DED76A200BF38DE /* ConfirmViewController.swift in Sources */,
+				E5EABC971DEEB42000BA254B /* ConstraintItem.swift in Sources */,
 				E55BDC9C1DED76A100BF38DE /* Utilities.swift in Sources */,
 				E574BE721DEE6D780016DB1F /* RAMBounceAnimation.swift in Sources */,
 				E574BE5C1DEE6B6E0016DB1F /* KYEmbedDrawerControllerSegue.swift in Sources */,
@@ -517,6 +571,8 @@
 				E55BDC991DED76A100BF38DE /* SingleImageSaver.swift in Sources */,
 				E55BDC761DED598500BF38DE /* MenuViewController.swift in Sources */,
 				E574BE611DEE6B950016DB1F /* Localize.swift in Sources */,
+				E5EABC961DEEB42000BA254B /* ConstraintDescription.swift in Sources */,
+				E5EABC941DEEB42000BA254B /* Constraint.swift in Sources */,
 				34346D031B7294470063FED4 /* AppDelegate.swift in Sources */,
 				E55BDCA41DED76A200BF38DE /* CropOverlay.swift in Sources */,
 				E55BDCA31DED76A200BF38DE /* CameraView.swift in Sources */,
@@ -524,7 +580,9 @@
 				E574BE791DEE6D780016DB1F /* RAMItemAnimationProtocol.swift in Sources */,
 				E55BDCA21DED76A200BF38DE /* PhotoLibraryViewController.swift in Sources */,
 				E55BDC9E1DED76A200BF38DE /* CameraViewController.swift in Sources */,
+				E5EABCA01DEEB42000BA254B /* ViewController+SnapKit.swift in Sources */,
 				E55BDCA61DED76A200BF38DE /* PermissionsView.swift in Sources */,
+				E5EABC951DEEB42000BA254B /* ConstraintAttributes.swift in Sources */,
 				E574BE781DEE6D780016DB1F /* RAMBadge.swift in Sources */,
 				E55BDC961DED76A100BF38DE /* ImageFetcher.swift in Sources */,
 			);

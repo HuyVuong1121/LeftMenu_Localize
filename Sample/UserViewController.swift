@@ -22,9 +22,9 @@ class UserViewController: UIViewController {
     }
     
     func navigationCustom() {
-        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: self.view.frame.width, height: 44))
+        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44 + 20))
         self.view.addSubview(navBar);
-        let navItem = UINavigationItem(title: "User");
+        let navItem = UINavigationItem(title: "Hi".localized());
         let  menuItem = UIBarButtonItem(title: "Menu", style: UIBarButtonItemStyle.Plain, target: nil, action: #selector(UserViewController.menu))
         navItem.leftBarButtonItem = menuItem;
         navBar.setItems([navItem], animated: false);

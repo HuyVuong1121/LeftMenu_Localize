@@ -24,6 +24,11 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.tableView.dataSource = self
         self.tableView.delegate = self
         setText()
+        imageAvata.layer.borderWidth = 1.0
+        imageAvata.layer.masksToBounds = false
+        imageAvata.layer.borderColor = UIColor.whiteColor().CGColor
+        imageAvata.layer.cornerRadius = imageAvata.frame.size.width/2
+        imageAvata.clipsToBounds = true
         imageAvata.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TableViewController.clickCamera)))
         imageAvata.userInteractionEnabled = true
         
@@ -94,12 +99,13 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         case 0:
              let detailViewControllor = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("DetailViewController")
                    viewController = detailViewControllor
+//            let viewControllers = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainController")
+//            viewController = viewControllers
         case 1:
             let tabBarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RAMAnimatedTabBarController")
             viewController = tabBarController
         case 2:
             let viewControllers = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainController")
-            viewController.view.backgroundColor = UIColor.whiteColor()
             viewController = viewControllers
             
         default:
