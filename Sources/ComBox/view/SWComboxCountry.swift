@@ -11,6 +11,11 @@ import UIKit
 class SWCountry:NSObject {
     var name:String!
     var image:UIImage!
+    
+    init(name: String, image: String) {
+        self.name = name
+        self.image = UIImage(named: image)
+    }
 }
 
 

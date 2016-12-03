@@ -32,7 +32,7 @@
             <connections>
                 <outlet property="labelText" destination="olQ-Vw-zLF" id="iBB-AW-OBD"/>
             </connections>
-            <point key="canvasLocation" x="390.5" y="358.5"/>
+            <point key="canvasLocation" x="504.5" y="330.5"/>
         </tableViewCell>
     </objects>
 </document>

@@ -14,33 +14,24 @@ class ExpandTableViewCell: UITableViewCell, SWComboxViewDelegate {
     
     @IBOutlet weak var viewCon: UIView!
     var k: Bool = false
+    
+    var list:[SWCountry] = []
+    var indexs: Int = 0
     var callBack:(()->Void)?
+    var callBackIndex:(()->Void)?
     override func awakeFromNib() {
         super.awakeFromNib()
         setupCombox2()
-        // Initialization code
     }
     
     func setupCombox2(){
         let helper = SWComboxCountryHelper()
-        let country = SWCountry()
-        country.name = "VietName"
-        country.image = UIImage(named: "square-CN.png")
+        let country: SWCountry = SWCountry(name: "VietName", image: "square-CN.png")
+        let country1  = SWCountry(name: "China", image: "square-CN.png")
+        let country2 = SWCountry(name: "Japen", image: "square-JP.png")
+        let country3 = SWCountry(name: "America", image: "square-US.png")
         
-        let country1 = SWCountry()
-        country1.name = "China"
-        country1.image = UIImage(named: "square-CN.png")
-        
-        let country2 = SWCountry()
-        country2.name = "Japen"
-        country2.image = UIImage(named: "square-JP.png")
-        
-        let country3 = SWCountry()
-        country3.name = "America"
-        country3.image = UIImage(named: "square-US.png")
-        
-        let list = [country,country1, country2, country3,country,country1, country2, country3,country,country1, country2, country3]
-        
+        list = [country,country1, country2, country3,country,country1, country2, country3,country,country1, country2, country3]
         
         
         var comboxView:SWComboxView
@@ -66,15 +57,17 @@ class ExpandTableViewCell: UITableViewCell, SWComboxViewDelegate {
     
     func selectedAtIndex(index: Int, combox: SWComboxView) {
         
-      
+        print(list[index].name)
         
+        indexs = index
+        if let callBackIndex = self.callBackIndex {
+            callBackIndex()
+        }
         
     }
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
     
     
