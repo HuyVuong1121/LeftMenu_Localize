@@ -112,16 +112,15 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
             dequecell.callBack  = {
                 if dequecell.k == false{
                     self.k = false
-                    tableView.reloadData()
                 } else {
                     self.k = true
-                    tableView.reloadData()
                 }
+                tableView.reloadData()
                 
             }
-            dequecell.callBackIndex = {
-                print(dequecell.list[dequecell.indexs].name)
-            }
+//            dequecell.callBackIndex = {
+//                print(dequecell.list[dequecell.indexs].name)
+//            }
             cell = dequecell
             
         default:
