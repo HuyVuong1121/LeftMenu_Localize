@@ -239,6 +239,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     //table frame
     private func getTableOriginFrame() -> CGRect
     {
+        // set height
         var orginY = self.frame.size.height
         var orginX:CGFloat = 0
         
@@ -261,11 +262,11 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     {
         var frame  = tableView.frame
         let countNumber = self.list.count > 4 ? 4.5 : CGFloat(self.list.count)
-        frame.size.height = self.contentView.frame.height * countNumber
+        frame.size.height = (self.contentView.frame.height * countNumber) - 40
         let fullHeight = UIScreen.mainScreen().bounds.size.height
         if frame.origin.y + frame.size.height > fullHeight
         {
-            frame.size.height == fullHeight - frame.origin.y
+            frame.size.height == fullHeight - frame.origin.y 
         }
         return frame
     }

@@ -15,24 +15,36 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obS-3r-4Gy">
-                        <rect key="frame" x="8" y="8" width="391" height="40"/>
+                        <rect key="frame" x="0.0" y="0.0" width="407" height="163"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8z-Ii-NBS">
+                                <rect key="frame" x="8" y="8" width="391" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="exO-Xr-Wtx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.67103908180000005" green="1" blue="0.2645824691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="2Tf-Vv-Oev"/>
+                            <constraint firstItem="M8z-Ii-NBS" firstAttribute="top" secondItem="obS-3r-4Gy" secondAttribute="top" constant="8" id="Dn5-ZA-b79"/>
+                            <constraint firstItem="M8z-Ii-NBS" firstAttribute="leading" secondItem="obS-3r-4Gy" secondAttribute="leading" constant="8" id="ham-eN-z3p"/>
+                            <constraint firstAttribute="trailing" secondItem="M8z-Ii-NBS" secondAttribute="trailing" constant="8" id="tcc-TU-1vP"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="obS-3r-4Gy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="768-BQ-zJd"/>
-                    <constraint firstItem="obS-3r-4Gy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="f4g-Vl-TWY"/>
-                    <constraint firstAttribute="trailing" secondItem="obS-3r-4Gy" secondAttribute="trailing" constant="8" id="vLI-dS-77d"/>
+                    <constraint firstAttribute="trailing" secondItem="obS-3r-4Gy" secondAttribute="trailing" id="F8B-aA-X7f"/>
+                    <constraint firstItem="obS-3r-4Gy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hSo-0h-PJG"/>
+                    <constraint firstItem="obS-3r-4Gy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qao-hA-sTf"/>
+                    <constraint firstAttribute="bottom" secondItem="obS-3r-4Gy" secondAttribute="bottom" id="s0U-DC-hQi"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="viewCombox" destination="H2p-sc-9uM" id="ySj-Uf-fVQ"/>
-                <outlet property="viewCon" destination="obS-3r-4Gy" id="qDG-gg-6i0"/>
+                <outlet property="viewCombox" destination="obS-3r-4Gy" id="cb0-Qi-f9b"/>
+                <outlet property="viewCon" destination="M8z-Ii-NBS" id="c3k-tQ-2Eu"/>
             </connections>
-            <point key="canvasLocation" x="508.5" y="488"/>
+            <point key="canvasLocation" x="576.5" y="498"/>
         </tableViewCell>
     </objects>
 </document>

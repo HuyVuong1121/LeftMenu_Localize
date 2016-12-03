@@ -28,6 +28,7 @@
                     <constraint firstItem="olQ-Vw-zLF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="n3i-d3-NxX"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.74184246781975749" blue="0.052299502595807179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="labelText" destination="olQ-Vw-zLF" id="iBB-AW-OBD"/>
             </connections>
