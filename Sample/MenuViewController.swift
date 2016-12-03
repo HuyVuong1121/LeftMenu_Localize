@@ -22,14 +22,17 @@ class MenuViewController: UIViewController {
     
     let availableLanguage = Localize.availableLanguages()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.app = UIApplication.sharedApplication().delegate as? AppDelegate
      //   test()
         setText()
-        // Do any additional setup after loading the view.
+      
+               // Do any additional setup after loading the view.
     }
     
+        
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MenuViewController.setText), name: LCLLanguageChangeNotification, object: nil)

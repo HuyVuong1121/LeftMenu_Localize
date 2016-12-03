@@ -2,7 +2,7 @@
 //  TableViewCell.swift
 //  Sample
 //
-//  Created by Huy on 11/29/16.
+//  Created by Huy on 12/3/16.
 //  Copyright © 2016 Roy Marmelstein. All rights reserved.
 //
 
@@ -10,8 +10,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    @IBOutlet weak var lableText: UILabel!
-    
+    @IBOutlet weak var labelText: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +21,5 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

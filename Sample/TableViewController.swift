@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, SWComboxViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -17,7 +17,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     var libraryEnabled: Bool = true
     var arrData: [String] = []
     
-    
+    var k : Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,7 +31,10 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         imageAvata.clipsToBounds = true
         imageAvata.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(TableViewController.clickCamera)))
         imageAvata.userInteractionEnabled = true
-        
+        let nib = UINib(nibName: "TableViewCell", bundle: nil)
+        tableView.registerNib(nib, forCellReuseIdentifier: "Cell")
+        let nibExpand = UINib(nibName: "ExpandTableViewCell", bundle: nil)
+        tableView.registerNib(nibExpand, forCellReuseIdentifier: "CellExpand")
         // Do any additional setup after loading the view.
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(TableViewController.loadList(_:)),name:"load", object: nil)
@@ -68,7 +71,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     
     func setText() {
-        arrData = ["Hello".localized(), "Hi".localized(), "Color".localized()]
+        arrData = ["Click".localized(), "Hi".localized(), "Color".localized(), "Hello".localized()]
     }
     
     
@@ -83,12 +86,60 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! TableViewCell
-        cell.lableText?.text = arrData[indexPath.row]
+        let cell: UITableViewCell?
+        switch indexPath.row {
+        case 3:
+            let dequecell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! TableViewCell
+            dequecell.labelText?.text = arrData[indexPath.row]
+            cell = dequecell
+        case 1:
+            let dequecell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! TableViewCell
+            dequecell.labelText?.text = arrData[indexPath.row]
+            cell = dequecell
+        case 2:
+            let dequecell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! TableViewCell
+            dequecell.labelText?.text = arrData[indexPath.row]
+            cell = dequecell
+        case 0:
+            let dequecell = tableView.dequeueReusableCellWithIdentifier("CellExpand", forIndexPath: indexPath) as! ExpandTableViewCell
+            
+            dequecell.callBack  = {
+                print(dequecell.k)
+                
+                if dequecell.k == false{
+                    self.k = false
+                    tableView.reloadData()
+                } else {
+                    self.k = true
+                    tableView.reloadData()
+                }
+            }
+            cell = dequecell
+        default:
+            let cells = UITableViewCell()
+            cell = cells
+        }
         
-        return cell
+        
+        return cell!
+        
     }
     
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if k == true {
+            
+            if indexPath.row == 0 {
+                return 200
+            } else {
+                return 80
+            }
+        }
+        else {
+            return 80
+        }
+        
+    }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
@@ -97,14 +148,17 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         switch indexPath.row {
         case 0:
-             let detailViewControllor = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("DetailViewController")
-                   viewController = detailViewControllor
-//            let viewControllers = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainController")
-//            viewController = viewControllers
+            let table = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("TableViewController")
+            viewController = table
         case 1:
+            let detailViewControllor = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("DetailViewController")
+            viewController = detailViewControllor
+            //            let viewControllers = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainController")
+        //            viewController = viewControllers
+        case 2:
             let tabBarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RAMAnimatedTabBarController")
             viewController = tabBarController
-        case 2:
+        case 3:
             let viewControllers = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainController")
             viewController = viewControllers
             
@@ -114,7 +168,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
             
         }
         let navController = UINavigationController(rootViewController: viewController)
-    
+        
         let elDrawer = (self.navigationController!.parentViewController! as! KYDrawerController)
         elDrawer.mainViewController = navController
         elDrawer.setDrawerState(KYDrawerController.DrawerState.Closed, animated: true)

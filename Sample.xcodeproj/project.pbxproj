@@ -15,7 +15,6 @@
 		34346D0D1B7294470063FED4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34346D0B1B7294470063FED4 /* LaunchScreen.xib */; };
 		34346D2C1B72983C0063FED4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34346D2F1B72983C0063FED4 /* Localizable.strings */; };
 		E55BDC6A1DED3B8400BF38DE /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E55BDC691DED3B8400BF38DE /* ja.lproj */; };
-		E55BDC741DED58CF00BF38DE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BDC731DED58CF00BF38DE /* TableViewCell.swift */; };
 		E55BDC761DED598500BF38DE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BDC751DED598500BF38DE /* MenuViewController.swift */; };
 		E55BDC781DED5C1400BF38DE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BDC771DED5C1400BF38DE /* TableViewController.swift */; };
 		E55BDC921DED76A100BF38DE /* CameraView.strings in Resources */ = {isa = PBXBuildFile; fileRef = E55BDC7A1DED76A100BF38DE /* CameraView.strings */; };
@@ -53,6 +52,10 @@
 		E574BE781DEE6D780016DB1F /* RAMBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574BE701DEE6D780016DB1F /* RAMBadge.swift */; };
 		E574BE791DEE6D780016DB1F /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574BE711DEE6D780016DB1F /* RAMItemAnimationProtocol.swift */; };
 		E574BE7B1DEE7A0F0016DB1F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574BE7A1DEE7A0F0016DB1F /* UserViewController.swift */; };
+		E5A02D861DF261F0005FD229 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A02D841DF261F0005FD229 /* TableViewCell.swift */; };
+		E5A02D871DF261F0005FD229 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A02D851DF261F0005FD229 /* TableViewCell.xib */; };
+		E5A02D8A1DF26356005FD229 /* ExpandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A02D881DF26356005FD229 /* ExpandTableViewCell.swift */; };
+		E5A02D8B1DF26356005FD229 /* ExpandTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A02D891DF26356005FD229 /* ExpandTableViewCell.xib */; };
 		E5EABC941DEEB42000BA254B /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC861DEEB42000BA254B /* Constraint.swift */; };
 		E5EABC951DEEB42000BA254B /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC871DEEB42000BA254B /* ConstraintAttributes.swift */; };
 		E5EABC961DEEB42000BA254B /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC881DEEB42000BA254B /* ConstraintDescription.swift */; };
@@ -67,6 +70,15 @@
 		E5EABC9F1DEEB42000BA254B /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC921DEEB42000BA254B /* View+SnapKit.swift */; };
 		E5EABCA01DEEB42000BA254B /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABC931DEEB42000BA254B /* ViewController+SnapKit.swift */; };
 		E5EABCA41DEEB55A00BA254B /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABCA31DEEB55A00BA254B /* SnapKitViewController.swift */; };
+		E5EABCA61DEEEDAD00BA254B /* SnapKitLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EABCA51DEEEDAD00BA254B /* SnapKitLayoutViewController.swift */; };
+		E5F85F191DF27AC3006E22E9 /* SWComboxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F85F101DF27AC3006E22E9 /* SWComboxHelper.swift */; };
+		E5F85F1A1DF27AC3006E22E9 /* SWComboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F85F111DF27AC3006E22E9 /* SWComboxView.swift */; };
+		E5F85F1B1DF27AC3006E22E9 /* SWComboxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5F85F121DF27AC3006E22E9 /* SWComboxView.xib */; };
+		E5F85F1C1DF27AC3006E22E9 /* SWComboxCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F85F141DF27AC3006E22E9 /* SWComboxCountry.swift */; };
+		E5F85F1D1DF27AC3006E22E9 /* SWComboxCountry.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5F85F151DF27AC3006E22E9 /* SWComboxCountry.xib */; };
+		E5F85F1E1DF27AC3006E22E9 /* SWComboxTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F85F161DF27AC3006E22E9 /* SWComboxTitle.swift */; };
+		E5F85F1F1DF27AC3006E22E9 /* SWComboxTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5F85F171DF27AC3006E22E9 /* SWComboxTitle.xib */; };
+		E5F85F201DF27AC3006E22E9 /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F85F181DF27AC3006E22E9 /* UIViewEx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +111,6 @@
 		E55BDC671DED3B4600BF38DE /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E55BDC681DED3B4600BF38DE /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E55BDC691DED3B8400BF38DE /* ja.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ja.lproj; sourceTree = "<group>"; };
-		E55BDC731DED58CF00BF38DE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		E55BDC751DED598500BF38DE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E55BDC771DED5C1400BF38DE /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E55BDC7A1DED76A100BF38DE /* CameraView.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = CameraView.strings; sourceTree = "<group>"; };
@@ -138,6 +149,10 @@
 		E574BE701DEE6D780016DB1F /* RAMBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMBadge.swift; sourceTree = "<group>"; };
 		E574BE711DEE6D780016DB1F /* RAMItemAnimationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMItemAnimationProtocol.swift; sourceTree = "<group>"; };
 		E574BE7A1DEE7A0F0016DB1F /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		E5A02D841DF261F0005FD229 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E5A02D851DF261F0005FD229 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		E5A02D881DF26356005FD229 /* ExpandTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandTableViewCell.swift; sourceTree = "<group>"; };
+		E5A02D891DF26356005FD229 /* ExpandTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandTableViewCell.xib; sourceTree = "<group>"; };
 		E5EABC861DEEB42000BA254B /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
 		E5EABC871DEEB42000BA254B /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
 		E5EABC881DEEB42000BA254B /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
@@ -153,6 +168,15 @@
 		E5EABC921DEEB42000BA254B /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
 		E5EABC931DEEB42000BA254B /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
 		E5EABCA31DEEB55A00BA254B /* SnapKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitViewController.swift; sourceTree = "<group>"; };
+		E5EABCA51DEEEDAD00BA254B /* SnapKitLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitLayoutViewController.swift; sourceTree = "<group>"; };
+		E5F85F101DF27AC3006E22E9 /* SWComboxHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWComboxHelper.swift; sourceTree = "<group>"; };
+		E5F85F111DF27AC3006E22E9 /* SWComboxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWComboxView.swift; sourceTree = "<group>"; };
+		E5F85F121DF27AC3006E22E9 /* SWComboxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWComboxView.xib; sourceTree = "<group>"; };
+		E5F85F141DF27AC3006E22E9 /* SWComboxCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWComboxCountry.swift; sourceTree = "<group>"; };
+		E5F85F151DF27AC3006E22E9 /* SWComboxCountry.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWComboxCountry.xib; sourceTree = "<group>"; };
+		E5F85F161DF27AC3006E22E9 /* SWComboxTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWComboxTitle.swift; sourceTree = "<group>"; };
+		E5F85F171DF27AC3006E22E9 /* SWComboxTitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWComboxTitle.xib; sourceTree = "<group>"; };
+		E5F85F181DF27AC3006E22E9 /* UIViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +200,7 @@
 		327E65A71DED384E006AF2F4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E5F85F0E1DF27AC3006E22E9 /* ComBox */,
 				E5EABC851DEEB40A00BA254B /* snapkit */,
 				E574BE621DEE6D780016DB1F /* RAMAnimatedTabBarController */,
 				E574BE5E1DEE6B950016DB1F /* Localize */,
@@ -216,16 +241,19 @@
 		34346CFF1B7294470063FED4 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				E5EABCA71DEEEDB600BA254B /* SnapKit */,
 				34346D021B7294470063FED4 /* AppDelegate.swift */,
 				E55BDC751DED598500BF38DE /* MenuViewController.swift */,
 				E55BDCA71DED7B0E00BF38DE /* DetailViewController.swift */,
 				E55BDC771DED5C1400BF38DE /* TableViewController.swift */,
+				E5A02D841DF261F0005FD229 /* TableViewCell.swift */,
+				E5A02D851DF261F0005FD229 /* TableViewCell.xib */,
+				E5A02D881DF26356005FD229 /* ExpandTableViewCell.swift */,
+				E5A02D891DF26356005FD229 /* ExpandTableViewCell.xib */,
 				E574BE7A1DEE7A0F0016DB1F /* UserViewController.swift */,
-				E5EABCA31DEEB55A00BA254B /* SnapKitViewController.swift */,
 				34346D061B7294470063FED4 /* Main.storyboard */,
 				34346D091B7294470063FED4 /* Images.xcassets */,
 				34346D0B1B7294470063FED4 /* LaunchScreen.xib */,
-				E55BDC731DED58CF00BF38DE /* TableViewCell.swift */,
 				34346D281B7297820063FED4 /* Resources */,
 				34346D001B7294470063FED4 /* Supporting Files */,
 			);
@@ -413,6 +441,46 @@
 			path = snapkit;
 			sourceTree = "<group>";
 		};
+		E5EABCA71DEEEDB600BA254B /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				E5EABCA31DEEB55A00BA254B /* SnapKitViewController.swift */,
+				E5EABCA51DEEEDAD00BA254B /* SnapKitLayoutViewController.swift */,
+			);
+			name = SnapKit;
+			sourceTree = "<group>";
+		};
+		E5F85F0E1DF27AC3006E22E9 /* ComBox */ = {
+			isa = PBXGroup;
+			children = (
+				E5F85F0F1DF27AC3006E22E9 /* source */,
+				E5F85F131DF27AC3006E22E9 /* view */,
+			);
+			path = ComBox;
+			sourceTree = "<group>";
+		};
+		E5F85F0F1DF27AC3006E22E9 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				E5F85F101DF27AC3006E22E9 /* SWComboxHelper.swift */,
+				E5F85F111DF27AC3006E22E9 /* SWComboxView.swift */,
+				E5F85F121DF27AC3006E22E9 /* SWComboxView.xib */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		E5F85F131DF27AC3006E22E9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E5F85F141DF27AC3006E22E9 /* SWComboxCountry.swift */,
+				E5F85F151DF27AC3006E22E9 /* SWComboxCountry.xib */,
+				E5F85F161DF27AC3006E22E9 /* SWComboxTitle.swift */,
+				E5F85F171DF27AC3006E22E9 /* SWComboxTitle.xib */,
+				E5F85F181DF27AC3006E22E9 /* UIViewEx.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -510,11 +578,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				34346D081B7294470063FED4 /* Main.storyboard in Resources */,
+				E5F85F1D1DF27AC3006E22E9 /* SWComboxCountry.xib in Resources */,
+				E5A02D871DF261F0005FD229 /* TableViewCell.xib in Resources */,
 				34346D2C1B72983C0063FED4 /* Localizable.strings in Resources */,
 				E5EABC9C1DEEB42000BA254B /* Info.plist in Resources */,
+				E5A02D8B1DF26356005FD229 /* ExpandTableViewCell.xib in Resources */,
+				E5F85F1F1DF27AC3006E22E9 /* SWComboxTitle.xib in Resources */,
 				E55BDC921DED76A100BF38DE /* CameraView.strings in Resources */,
 				E55BDC931DED76A100BF38DE /* CameraViewAssets.xcassets in Resources */,
 				34346D0D1B7294470063FED4 /* LaunchScreen.xib in Resources */,
+				E5F85F1B1DF27AC3006E22E9 /* SWComboxView.xib in Resources */,
 				E55BDC6A1DED3B8400BF38DE /* ja.lproj in Resources */,
 				34346D0A1B7294470063FED4 /* Images.xcassets in Resources */,
 				E55BDCA11DED76A200BF38DE /* ConfirmViewController.xib in Resources */,
@@ -542,7 +615,6 @@
 				E55BDC951DED76A100BF38DE /* CameraShot.swift in Sources */,
 				E574BE5D1DEE6B6E0016DB1F /* KYEmbedMainControllerSegue.swift in Sources */,
 				E5EABC9D1DEEB42000BA254B /* LayoutConstraint.swift in Sources */,
-				E55BDC741DED58CF00BF38DE /* TableViewCell.swift in Sources */,
 				E574BE5B1DEE6B6E0016DB1F /* KYDrawerController.swift in Sources */,
 				E5EABC981DEEB42000BA254B /* ConstraintMaker.swift in Sources */,
 				E5EABCA41DEEB55A00BA254B /* SnapKitViewController.swift in Sources */,
@@ -552,6 +624,7 @@
 				E5EABC991DEEB42000BA254B /* ConstraintRelation.swift in Sources */,
 				E55BDC9D1DED76A200BF38DE /* VolumeControl.swift in Sources */,
 				E574BE751DEE6D780016DB1F /* RAMRotationAnimation.swift in Sources */,
+				E5F85F1A1DF27AC3006E22E9 /* SWComboxView.swift in Sources */,
 				E5EABC9F1DEEB42000BA254B /* View+SnapKit.swift in Sources */,
 				E5EABC9B1DEEB42000BA254B /* EdgeInsets.swift in Sources */,
 				E5EABC9E1DEEB42000BA254B /* SnapKit.swift in Sources */,
@@ -559,11 +632,13 @@
 				E574BE741DEE6D780016DB1F /* RAMFumeAnimation.swift in Sources */,
 				E55BDCA81DED7B0E00BF38DE /* DetailViewController.swift in Sources */,
 				E574BE771DEE6D780016DB1F /* RAMAnimatedTabBarController.swift in Sources */,
+				E5F85F1E1DF27AC3006E22E9 /* SWComboxTitle.swift in Sources */,
 				E55BDCA51DED76A200BF38DE /* ImageCell.swift in Sources */,
 				E55BDC781DED5C1400BF38DE /* TableViewController.swift in Sources */,
 				E55BDC941DED76A100BF38DE /* CameraGlobals.swift in Sources */,
 				E55BDCA01DED76A200BF38DE /* ConfirmViewController.swift in Sources */,
 				E5EABC971DEEB42000BA254B /* ConstraintItem.swift in Sources */,
+				E5A02D8A1DF26356005FD229 /* ExpandTableViewCell.swift in Sources */,
 				E55BDC9C1DED76A100BF38DE /* Utilities.swift in Sources */,
 				E574BE721DEE6D780016DB1F /* RAMBounceAnimation.swift in Sources */,
 				E574BE5C1DEE6B6E0016DB1F /* KYEmbedDrawerControllerSegue.swift in Sources */,
@@ -575,12 +650,17 @@
 				E5EABC941DEEB42000BA254B /* Constraint.swift in Sources */,
 				34346D031B7294470063FED4 /* AppDelegate.swift in Sources */,
 				E55BDCA41DED76A200BF38DE /* CropOverlay.swift in Sources */,
+				E5F85F201DF27AC3006E22E9 /* UIViewEx.swift in Sources */,
+				E5F85F191DF27AC3006E22E9 /* SWComboxHelper.swift in Sources */,
 				E55BDCA31DED76A200BF38DE /* CameraView.swift in Sources */,
 				E574BE761DEE6D780016DB1F /* RAMTransitionItemAnimations.swift in Sources */,
 				E574BE791DEE6D780016DB1F /* RAMItemAnimationProtocol.swift in Sources */,
 				E55BDCA21DED76A200BF38DE /* PhotoLibraryViewController.swift in Sources */,
+				E5EABCA61DEEEDAD00BA254B /* SnapKitLayoutViewController.swift in Sources */,
 				E55BDC9E1DED76A200BF38DE /* CameraViewController.swift in Sources */,
 				E5EABCA01DEEB42000BA254B /* ViewController+SnapKit.swift in Sources */,
+				E5A02D861DF261F0005FD229 /* TableViewCell.swift in Sources */,
+				E5F85F1C1DF27AC3006E22E9 /* SWComboxCountry.swift in Sources */,
 				E55BDCA61DED76A200BF38DE /* PermissionsView.swift in Sources */,
 				E5EABC951DEEB42000BA254B /* ConstraintAttributes.swift in Sources */,
 				E574BE781DEE6D780016DB1F /* RAMBadge.swift in Sources */,
