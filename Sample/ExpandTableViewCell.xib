@@ -44,7 +44,7 @@
                 <outlet property="viewCombox" destination="obS-3r-4Gy" id="cb0-Qi-f9b"/>
                 <outlet property="viewCon" destination="M8z-Ii-NBS" id="c3k-tQ-2Eu"/>
             </connections>
-            <point key="canvasLocation" x="576.5" y="498"/>
+            <point key="canvasLocation" x="630.5" y="495"/>
         </tableViewCell>
     </objects>
 </document>

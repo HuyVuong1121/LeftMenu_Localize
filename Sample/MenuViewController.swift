@@ -14,25 +14,20 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var textLabel: UILabel!
     
     @IBOutlet weak var changeButton: UIButton!
-    var app: AppDelegate!
-
+    
     @IBOutlet weak var resetButton: UIButton!
     
     var actionSheet: UIAlertController!
-    
+    var app: AppDelegate!
     let availableLanguage = Localize.availableLanguages()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.app = UIApplication.sharedApplication().delegate as? AppDelegate
-     //   test()
         setText()
-      
-               // Do any additional setup after loading the view.
     }
     
-        
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MenuViewController.setText), name: LCLLanguageChangeNotification, object: nil)
@@ -43,7 +38,7 @@ class MenuViewController: UIViewController {
         super.viewWillDisappear(animated)
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
-
+    
     func setText() {
         textLabel.text = "Hello world".localized()
         changeButton.setTitle("Change".localized(), forState: .Normal)
@@ -89,19 +84,19 @@ class MenuViewController: UIViewController {
         
     }
     @IBAction func AcMenu(sender: AnyObject) {
-//        if self.app!.k == true {
-//            
-//             let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-//             let redViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("KYDrawerController") as! KYDrawerController
-//             self.app!.window?.rootViewController = redViewController
-//
-//        }else {
-            if let drawerController = navigationController?.parentViewController as? KYDrawerController {
-                drawerController.setDrawerState(.Opened, animated: true)
-            }
-    //    }
+        //        if self.app!.k == true {
+        //
+        //             let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        //             let redViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("KYDrawerController") as! KYDrawerController
+        //             self.app!.window?.rootViewController = redViewController
+        //
+        //        }else {
+        if let drawerController = navigationController?.parentViewController as? KYDrawerController {
+            drawerController.setDrawerState(.Opened, animated: true)
+        }
+        //    }
         
     }
-
-   
+    
+    
 }

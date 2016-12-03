@@ -15,11 +15,8 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var imageAvata: UIImageView!
     
     var croppingEnabled: Bool = true
-    
     var libraryEnabled: Bool = true
-    
     var arrData: [String] = []
-    
     var k : Bool = false
     
     override func viewDidLoad() {
@@ -120,7 +117,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
                     self.k = true
                     tableView.reloadData()
                 }
-
+                
             }
             dequecell.callBackIndex = {
                 print(dequecell.list[dequecell.indexs].name)
@@ -153,7 +150,6 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        
         var viewController = UIViewController()
         
         switch indexPath.row {
@@ -181,6 +177,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         elDrawer.mainViewController = navController
         elDrawer.setDrawerState(KYDrawerController.DrawerState.Closed, animated: true)
     }
+    
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)

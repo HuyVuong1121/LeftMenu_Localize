@@ -177,25 +177,6 @@
             </objects>
             <point key="canvasLocation" x="957" y="2228"/>
         </scene>
-        <!--Snap Kit View Controller-->
-        <scene sceneID="WML-Tp-g7U">
-            <objects>
-                <viewController id="h5K-ER-wgT" customClass="SnapKitViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cpb-bc-aow"/>
-                        <viewControllerLayoutGuide type="bottom" id="6h3-Oe-LVc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1aM-6m-em3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.5972192127698297" green="1" blue="0.9401140862179751" alpha="0.54038292253521125" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="13R-tB-Ksu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1005" y="1781"/>
-        </scene>
         <!--Drop-->
         <scene sceneID="GQb-zp-9S5">
             <objects>
@@ -220,44 +201,6 @@
                 <customObject id="AtW-iW-huC" customClass="RAMFlipRightTransitionItemAnimations" customModule="Sample" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="957" y="2980"/>
-        </scene>
-        <!--SnapKit-->
-        <scene sceneID="8SJ-5j-4RJ">
-            <objects>
-                <viewController id="rzv-sQ-6ef" customClass="SnapKitLayoutViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="c63-tE-2sp"/>
-                        <viewControllerLayoutGuide type="bottom" id="e0Y-S8-I8w"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HXK-Uw-zS0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Py-bX-rSs">
-                                <rect key="frame" x="79" y="308" width="176" height="170"/>
-                                <color key="backgroundColor" red="1" green="0.66368888270962545" blue="0.078571599274541271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-KT-j9D">
-                                <rect key="frame" x="127" y="197" width="102" height="103"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WED-DM-bov">
-                                <rect key="frame" x="0.0" y="64" width="303" height="125"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.72306619839259678" green="1" blue="0.078922614984540118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="SnapKit" id="h7x-DG-ej8"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="avataImgView" destination="cRg-KT-j9D" id="Vjs-Fw-lBo"/>
-                        <outlet property="contenView" destination="7Py-bX-rSs" id="Vpg-kC-Sfp"/>
-                        <outlet property="imgView" destination="WED-DM-bov" id="NwD-xO-rQi"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M76-k6-0eb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1005" y="2492"/>
         </scene>
         <!--Pin-->
         <scene sceneID="QHH-cN-Rko">
@@ -443,25 +386,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7d-E3-a4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="357" y="2228"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="wvg-k9-AEc">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cnL-Zu-R1k" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZOM-XE-k6e">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="rzv-sQ-6ef" kind="relationship" relationship="rootViewController" id="Ftv-rk-HHp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KxV-Tf-Kxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1517" y="2492"/>
         </scene>
     </scenes>
     <resources>
