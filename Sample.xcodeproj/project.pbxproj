@@ -79,6 +79,7 @@
 		E5F85F1E1DF27AC3006E22E9 /* SWComboxTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F85F161DF27AC3006E22E9 /* SWComboxTitle.swift */; };
 		E5F85F1F1DF27AC3006E22E9 /* SWComboxTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5F85F171DF27AC3006E22E9 /* SWComboxTitle.xib */; };
 		E5F85F201DF27AC3006E22E9 /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F85F181DF27AC3006E22E9 /* UIViewEx.swift */; };
+		E5F85F231DF2B7B5006E22E9 /* ExpandvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F85F221DF2B7B5006E22E9 /* ExpandvViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,7 @@
 		E5F85F161DF27AC3006E22E9 /* SWComboxTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWComboxTitle.swift; sourceTree = "<group>"; };
 		E5F85F171DF27AC3006E22E9 /* SWComboxTitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWComboxTitle.xib; sourceTree = "<group>"; };
 		E5F85F181DF27AC3006E22E9 /* UIViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
+		E5F85F221DF2B7B5006E22E9 /* ExpandvViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandvViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 		34346CFF1B7294470063FED4 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				E5F85F211DF2B72F006E22E9 /* ExpandTableView */,
 				E5EABCA71DEEEDB600BA254B /* SnapKit */,
 				34346D021B7294470063FED4 /* AppDelegate.swift */,
 				E55BDC751DED598500BF38DE /* MenuViewController.swift */,
@@ -481,6 +484,14 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		E5F85F211DF2B72F006E22E9 /* ExpandTableView */ = {
+			isa = PBXGroup;
+			children = (
+				E5F85F221DF2B7B5006E22E9 /* ExpandvViewController.swift */,
+			);
+			path = ExpandTableView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -644,6 +655,7 @@
 				E574BE5C1DEE6B6E0016DB1F /* KYEmbedDrawerControllerSegue.swift in Sources */,
 				E55BDC9B1DED76A100BF38DE /* UIViewExtensions.swift in Sources */,
 				E55BDC991DED76A100BF38DE /* SingleImageSaver.swift in Sources */,
+				E5F85F231DF2B7B5006E22E9 /* ExpandvViewController.swift in Sources */,
 				E55BDC761DED598500BF38DE /* MenuViewController.swift in Sources */,
 				E574BE611DEE6B950016DB1F /* Localize.swift in Sources */,
 				E5EABC961DEEB42000BA254B /* ConstraintDescription.swift in Sources */,

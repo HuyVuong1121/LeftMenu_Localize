@@ -19,17 +19,28 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8z-Ii-NBS">
                                 <rect key="frame" x="8" y="8" width="391" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_language" translatesAutoresizingMaskIntoConstraints="NO" id="l4g-5k-zUV">
+                                        <rect key="frame" x="8" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="0vy-qf-iYC"/>
+                                            <constraint firstAttribute="height" constant="40" id="rhu-s8-ddi"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21918763459999999" green="1" blue="0.24813785569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="exO-Xr-Wtx"/>
+                                    <constraint firstAttribute="bottom" secondItem="l4g-5k-zUV" secondAttribute="bottom" id="Dlr-B5-HcO"/>
+                                    <constraint firstItem="l4g-5k-zUV" firstAttribute="top" secondItem="M8z-Ii-NBS" secondAttribute="top" id="T3g-Bs-SEE"/>
+                                    <constraint firstAttribute="height" constant="40" id="gbs-WG-I5K"/>
+                                    <constraint firstItem="l4g-5k-zUV" firstAttribute="leading" secondItem="M8z-Ii-NBS" secondAttribute="leading" constant="8" id="hoB-wb-VDL"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.67103908180000005" green="1" blue="0.2645824691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="M8z-Ii-NBS" firstAttribute="top" secondItem="obS-3r-4Gy" secondAttribute="top" constant="8" id="Dn5-ZA-b79"/>
-                            <constraint firstItem="M8z-Ii-NBS" firstAttribute="leading" secondItem="obS-3r-4Gy" secondAttribute="leading" constant="8" id="ham-eN-z3p"/>
-                            <constraint firstAttribute="trailing" secondItem="M8z-Ii-NBS" secondAttribute="trailing" constant="8" id="tcc-TU-1vP"/>
+                            <constraint firstItem="M8z-Ii-NBS" firstAttribute="top" secondItem="obS-3r-4Gy" secondAttribute="top" constant="8" id="GZR-X3-4ed"/>
+                            <constraint firstItem="M8z-Ii-NBS" firstAttribute="leading" secondItem="obS-3r-4Gy" secondAttribute="leading" constant="8" id="e4V-PM-w0j"/>
+                            <constraint firstAttribute="trailing" secondItem="M8z-Ii-NBS" secondAttribute="trailing" constant="8" id="gLM-Zy-fOA"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -47,4 +58,7 @@
             <point key="canvasLocation" x="630.5" y="495"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="icon_language" width="25" height="25"/>
+    </resources>
 </document>

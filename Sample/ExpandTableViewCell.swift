@@ -26,6 +26,7 @@ class ExpandTableViewCell: UITableViewCell, SWComboxViewDelegate {
     }
     
     func setupCombox2(){
+        
         let helper = SWComboxCountryHelper()
         
         let country: SWCountry = SWCountry(name: "VietName", image: "square-CN.png")
@@ -36,6 +37,7 @@ class ExpandTableViewCell: UITableViewCell, SWComboxViewDelegate {
         list = [country,country1, country2, country3,country,country1, country2, country3,country,country1, country2, country3]
         
         var comboxView:SWComboxView
+        
         comboxView = SWComboxView.loadInstanceFromNibNamedToContainner(self.viewCon)!
         comboxView.bindData(list, comboxHelper: helper, seletedIndex: 0, comboxDelegate: self, containnerView:self.viewCombox)
     }

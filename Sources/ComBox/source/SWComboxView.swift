@@ -53,6 +53,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     func bindData(data: NSArray, comboxHelper: SWComboxCommonHelper, seletedIndex: Int, comboxDelegate:SWComboxViewDelegate, containnerView: UIView)
     {
+        
         defaultIndex = seletedIndex
         delegate = comboxDelegate
         list = data
@@ -81,6 +82,8 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     //MARK: setup
     private func setupContentView()
     {
+        
+       
         print("total count is \(list.count)", terminator: "")
         if defaultIndex < list.count
         {
@@ -102,8 +105,9 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
             tableView.separatorStyle = UITableViewCellSeparatorStyle.None
             tableView.delegate = self
             tableView.dataSource = self
-            tableView.layer.borderWidth = 0.5;
-            tableView.layer.borderColor = UIColor.lightGrayColor().CGColor;
+            tableView.layer.borderWidth = 0
+            tableView.layer.borderColor = UIColor.clearColor().CGColor;
+            tableView.separatorColor = UIColor.clearColor()
             supView.addSubview(tableView)
         }
     }
@@ -121,12 +125,14 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         print("table frame is \(self.tableView.frame)\n", terminator: "")
         let cell = helper.getCurrentCell(self.tableView, data: list[indexPath.row])
-        cell.addBottomLine(0, color: UIColor.lightGrayColor())
+        cell.addBottomLine(0, color: UIColor.clearColor())
+        
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         defaultIndex = indexPath.row
+        
         dismissCombox()
     }
     
@@ -142,6 +148,8 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     {
         defaultIndex = index
         let object: AnyObject = list[defaultIndex]
+     
+        
         self.helper.setCurrentView(object)
     }
     
@@ -149,6 +157,8 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     //MARK: Tap Action
     private func tapTheCombox()
     {
+        
+        
         setupTable()
         closeOtherCombox()
         closeCurrentCombox()
@@ -248,14 +258,14 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         while(supviewR != nil && endFlag)
         {
             orginY += supviewR!.frame.origin.y
-            orginX += supviewR!.frame.origin.x
+            orginX += supviewR!.frame.origin.x + 10
             if (supviewR == self.supView)
             {
                 endFlag = false
             }
             supviewR = supviewR?.superview
         }
-        return CGRectMake(orginX, orginY, self.frame.size.width, 0)
+        return CGRectMake(orginX, orginY, self.frame.size.width - 30, 0)
     }
     
     private func getTableFrame() -> CGRect

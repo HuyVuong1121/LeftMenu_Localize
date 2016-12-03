@@ -62,10 +62,13 @@ class SWComboxCountryHelper: SWComboxCommonHelper {
     func loadCurrentView(contentView:UIView, data: AnyObject)
     {
         comboxView = UIView.loadInstanceFromNibNamedToContainner(contentView)
+      //  (data as! SWCountry).image = UIImage(named: "icon_language")
         comboxView.bindCountry(data as! SWCountry)
     }
     
     func setCurrentView(data: AnyObject){
+        print((data as! SWCountry).image)
+      //  (data as! SWCountry).image = UIImage(named: "icon_language")
         comboxView.bindCountry(data as! SWCountry)
     }
     

@@ -172,7 +172,8 @@ extension UIView {
     
     //MARK: add frame
     func addFrame() {
-        layer.borderWidth = 1;
+        // set border
+        layer.borderWidth = 0.0;
         self.layer.borderColor = UIColor.lightGrayColor().CGColor
     }
     
