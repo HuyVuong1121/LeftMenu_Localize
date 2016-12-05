@@ -25,20 +25,13 @@ class SWComboxCountry: UIView {
     
     @IBOutlet weak var name: UILabel!
     
-    
-
-    
-
     func bindCountry(country: SWCountry)
     {
-        //bindImage(image: image, title: country.name)
-        
         bindImage(country.image, title: country.name)
     }
     
     func bindImage(image:UIImage, title: String)
     {
-//        icon.image = UIImage(named: "icon_language")
         icon.image = image
         name.text = title
     }

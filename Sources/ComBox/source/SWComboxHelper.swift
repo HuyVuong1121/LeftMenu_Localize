@@ -20,8 +20,6 @@ protocol SWComboxCommonHelper {
     
 }
 
-
-
 class SWComboxTitleHelper: SWComboxCommonHelper {
     
     var comboxView:SWComboxTitle!
@@ -63,14 +61,14 @@ class SWComboxCountryHelper: SWComboxCommonHelper {
     {
         
         comboxView = UIView.loadInstanceFromNibNamedToContainner(contentView)
-      //  (data as! SWCountry).image = UIImage(named: "icon_language")
+        // gan anh hien thi mac dinh
         let a = SWCountry.init(name: (data as! SWCountry).name, image: "icon_language")
         comboxView.bindCountry(a)
     }
     
     func setCurrentView(data: AnyObject){
         print((data as! SWCountry).image)
-      //  (data as! SWCountry).image = UIImage(named: "icon_language")
+        // gan anh hien thi mac dinh
         let a = SWCountry.init(name: (data as! SWCountry).name, image: "icon_language")
         comboxView.bindCountry(a)
     }

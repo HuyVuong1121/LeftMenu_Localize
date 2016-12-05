@@ -258,6 +258,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         while(supviewR != nil && endFlag)
         {
             orginY += supviewR!.frame.origin.y
+            // +10
             orginX += supviewR!.frame.origin.x + 10
             if (supviewR == self.supView)
             {
@@ -265,6 +266,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
             }
             supviewR = supviewR?.superview
         }
+        // - 30
         return CGRectMake(orginX, orginY, self.frame.size.width - 30, 0)
     }
     

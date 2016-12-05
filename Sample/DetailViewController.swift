@@ -11,6 +11,7 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var imgView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

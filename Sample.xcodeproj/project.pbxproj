@@ -39,6 +39,7 @@
 		E55BDCA51DED76A200BF38DE /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BDC901DED76A100BF38DE /* ImageCell.swift */; };
 		E55BDCA61DED76A200BF38DE /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BDC911DED76A100BF38DE /* PermissionsView.swift */; };
 		E55BDCA81DED7B0E00BF38DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BDCA71DED7B0E00BF38DE /* DetailViewController.swift */; };
+		E573FDCC1DF5431400CE9ADC /* SnapKitUpdateContraintsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573FDCB1DF5431400CE9ADC /* SnapKitUpdateContraintsVC.swift */; };
 		E574BE5B1DEE6B6E0016DB1F /* KYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574BE581DEE6B6E0016DB1F /* KYDrawerController.swift */; };
 		E574BE5C1DEE6B6E0016DB1F /* KYEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574BE591DEE6B6E0016DB1F /* KYEmbedDrawerControllerSegue.swift */; };
 		E574BE5D1DEE6B6E0016DB1F /* KYEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574BE5A1DEE6B6E0016DB1F /* KYEmbedMainControllerSegue.swift */; };
@@ -136,6 +137,7 @@
 		E55BDC901DED76A100BF38DE /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		E55BDC911DED76A100BF38DE /* PermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		E55BDCA71DED7B0E00BF38DE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E573FDCB1DF5431400CE9ADC /* SnapKitUpdateContraintsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitUpdateContraintsVC.swift; sourceTree = "<group>"; };
 		E574BE581DEE6B6E0016DB1F /* KYDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYDrawerController.swift; sourceTree = "<group>"; };
 		E574BE591DEE6B6E0016DB1F /* KYEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
 		E574BE5A1DEE6B6E0016DB1F /* KYEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 			children = (
 				E5EABCA31DEEB55A00BA254B /* SnapKitViewController.swift */,
 				E5EABCA51DEEEDAD00BA254B /* SnapKitLayoutViewController.swift */,
+				E573FDCB1DF5431400CE9ADC /* SnapKitUpdateContraintsVC.swift */,
 			);
 			name = SnapKit;
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				E55BDC9C1DED76A100BF38DE /* Utilities.swift in Sources */,
 				E574BE721DEE6D780016DB1F /* RAMBounceAnimation.swift in Sources */,
 				E574BE5C1DEE6B6E0016DB1F /* KYEmbedDrawerControllerSegue.swift in Sources */,
+				E573FDCC1DF5431400CE9ADC /* SnapKitUpdateContraintsVC.swift in Sources */,
 				E55BDC9B1DED76A100BF38DE /* UIViewExtensions.swift in Sources */,
 				E55BDC991DED76A100BF38DE /* SingleImageSaver.swift in Sources */,
 				E5F85F231DF2B7B5006E22E9 /* ExpandvViewController.swift in Sources */,
@@ -843,6 +847,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.roymarmelstein.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -855,6 +860,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.roymarmelstein.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

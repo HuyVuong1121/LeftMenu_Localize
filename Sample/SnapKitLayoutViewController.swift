@@ -8,6 +8,8 @@
 
 import UIKit
 
+@available(iOS 9.0, *)
+
 class SnapKitLayoutViewController: UIViewController {
 
     @IBOutlet weak var imgView: UIImageView!
@@ -17,62 +19,66 @@ class SnapKitLayoutViewController: UIViewController {
     
     @IBOutlet weak var avataImgView: UIImageView!
     
+    @IBOutlet weak var stackView01: UIStackView!
+    
+    @IBOutlet weak var naviCustom: UIView!
+    
     var setUpContraints = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "SnapKit..."
+     //   naviCustom.removeConstraints(naviCustom.constraints)
+        imgView.removeConstraints(imgView.constraints)
+        contenView.removeConstraints(contenView.constraints)
         
-//        self.view.addSubview(imgView)
-//        imgView.customImageView("imgChim", contentMode: .ScaleAspectFill, borderWidth: 0, masksToBounds: false, cornerRadius: 0)
-//        view.addSubview(blackView)
+        avataImgView.removeConstraints(avataImgView.constraints)
+        avataImgView.customImageView("swift", contentMode: UIViewContentMode.ScaleAspectFill, borderWidth: 1, masksToBounds: true, cornerRadius: avataImgView.frame.size.width / 2)
         view.setNeedsUpdateConstraints()
     }
     
     
     override func updateViewConstraints() {
         if (!setUpContraints) {
-            imgView.translatesAutoresizingMaskIntoConstraints = true
+            let superview = self.view
+            
+//            naviCustom.snp_makeConstraints(closure: { (make) in
+//                make.top.equalTo(superview)
+//                make.width.equalTo(superview)
+//                make.height.equalTo(64)
+//            })
             imgView.snp_makeConstraints(closure: { (make) in
-//                make.top.equalTo(self.view.snp_top).offset(564)
-//            //    make.width.equalTo(self.view)
-//                make.left.equalTo(self.view.snp_left)
-//                make.right.equalTo(self.view.snp_right)
-//                make.height.equalTo(300)
-                make.center.equalTo(view)
-                make.size.equalTo(CGSizeMake(100.0, 100.0))
+                
+                make.top.equalTo(superview)
+                make.width.equalTo(superview)
+                make.height.equalTo(superview).multipliedBy(0.3)
             })
+            
+            contenView.snp_makeConstraints(closure: { (make) in
+                make.top.equalTo(imgView.snp_bottom)
+                make.width.equalTo(imgView.snp_width)
+                make.bottom.equalTo(superview)
+            })
+            
+            avataImgView.snp_makeConstraints(closure: { (make) in
+                make.top.equalTo(imgView.snp_bottom).offset(-50)
+                make.centerX.equalTo(imgView.snp_centerX)
+                make.size.equalTo(CGSizeMake(100, 100))
+            })
+            
+           stackView01.snp_makeConstraints(closure: { (make) in
+            make.centerX.equalTo(contenView.snp_centerX)
+            make.centerY.equalTo(contenView.snp_centerY)
+            make.left.equalTo(contenView.snp_left).offset(20)
+           })
             setUpContraints = true
         }
         
         super.updateViewConstraints()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-//        if (!setUpContraints) {
-////            imgView.translatesAutoresizingMaskIntoConstraints = true
-//            imgView.snp_makeConstraints(closure: { (make) in
-////                make.top.equalTo(self.view.snp_top).offset(564)
-////                //    make.width.equalTo(self.view)
-////                make.left.equalTo(self.view.snp_left)
-////                make.right.equalTo(self.view.snp_right)
-////                make.height.equalTo(300)
-//                make.center.equalTo(view)
-//                make.size.equalTo(CGSizeMake(100.0, 100.0))
-//            })
-//            setUpContraints = true
-//        }
-//        
-//        super.updateViewConstraints()
-    }
   
 }
-
-
 
 extension UIImageView {
     
